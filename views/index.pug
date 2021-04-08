@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Pastebin 
+  div(class="topnav")
+    a(class="active", href='http://localhost:3000/') Home          
+    a(href='http://localhost:3000/showdbentries') Your entries 
+  hr
+  form#useform(action="http://localhost:3000/entries" method="POST")
+    input(type="submit" value="Save text")
+    br
+  input#nameinput(input='text', form="useform", name="myname", placeholder="Enter your name")
+  hr
+  textarea#inputarea(rows = '20', cols ='100',name = "mytext" form = "useform", placeholder="Enter text here")
+  
+
+  

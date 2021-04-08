@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+     h1 Pastes
+     br
+     ul  
+        each val in results 
+            h4= val.name 
+            li= val.text 
+            hr
+             
