@@ -2,6 +2,10 @@ body {
   background-color:rgb(241, 234, 234);
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8SEhUSEg8VFRUXFxUXFxUVFRUVFRUVFxUXFxcXFxUYHSggGBolHRcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQADB//EABsQAQEBAQEAAwAAAAAAAAAAAAABEQLwEpGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APHmZgZWUGixooKsjRYCyLIsiyA0i4shSAki4UhSAONh4uAGNjpjYDniY6Y2A52JjpiWA52DY64NgOdg2OliWA5WJYdSwHOpYdg4AIVSgiKgMlVAVmWAxJFgLIUSFAaQ5EhSAshSNIUgNIUiyFICYWLIWAOLhYuAONh42AGJjpjYDng464NgOdg2Otg2A5WDY62BYDnYFjrQsBzsGulg2AFGnYNAUKjQRmYGixlgLFiQoCwokKAsOJDgNIcjSFICyFI0hyA0iyLIWAmLhYuAOLhY2AGNh4lgBYNjrYNgOVg2Otg2A5WDY6dQbAcrAsdaFgOdgWOlCgFg06NAEKiCIqAsVIsAoUGFAKFBhwChyDzD5AocTk+QWHIMhwFkKRpCkBsXFkUExZFxgHGwsawAwbHSjQc7BsdLBsBysCx16DqA51zrrYFByo10oUHOjToUBo0qIDWWjgKUGFAWHBhQChwYcAocGHyBw4EdOQLk5BhwFkOCQKWJCBmVgTEpJQEaY0Ao10oUHOjT6Cg50K6VzoBXOulCg50adCgNGlRoDUWpQWLBhQChQYUA4cCHAPk+Q5PkHSHA5PkDhwIcA4QwoBRYigqpFBGrNQGpSGgNGlRoB0FPoKDn0FOhQDpzrpXOgFCnQoDRpUaA1FqWgsWDCAoUGFAOHHOHAdIfLnD5B05dOXOHKDpDjnKcB0hOcOUDUCAmRgVKyA1G1aloJQpUKA9DVo0AoUqHQBQp0KAUKVGgNEqFBKi1AaEKwChQYUA4UCFAdIfNc4cB1h81yhwHWHK5Q5QdJSlc4egeroaWgTCsoLrWjraC2ja2jaC0KtoUE6o9LaFoDQpULQGhStCgNClRoDRKjQQatQFWCsAoUAoBwoEKUHSU+XOUoDrycrlDlB0lOVylOUHSUtc5S0HTV1z0tA9bQ1dAta0NbQK0bU1LQa0bWtG0GtC1rRtBLQq2haCWhStCglGrRoJRWpQSotQGZmAosGFAKFAlKUDhShClB0lOVylKUHWUpXKUpQdZS1ylLQdNLXPW0HTV1z1tA9a0Pk2gWpaNqWgto2po2gto2paNoNaFq2jaCWjVtG0Eo2rRBhVARmQFZmBVFYBLBigcpSgsoOkpSucpSg6SlK5SlKDpKUrlpaDpq656ug6a0rnq6B6mhraB6mhaloFaNqWpoLaOpaNoLaNraOg1G1ktBKiiDVFQGZkBUZgVWYFixmBZ77VmAosZgJYzASswKrMDN78ZgWJUYFGswJUVgCozAlFmBBZgRGYEZmBGrMD/2Q==);
+}
+h4 {
+  color: white;
 }
 
 a {
@@ -9,11 +13,12 @@ a {
 }
 
 h1 {
-  color: rgb(26, 5, 5);
+  color: rgb(240, 232, 232);
 }
 
 p {
-  color: rgb(15, 4, 4);
+  color: rgb(238, 229, 229);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h2 {
@@ -25,7 +30,7 @@ pre {
 }
 
 li {
-  color: rgb(29, 7, 7);
+  color: rgb(231, 230, 230);
 }
 
 /* Add a black background color to the top navigation */

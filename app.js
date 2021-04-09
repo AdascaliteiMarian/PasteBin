@@ -1,14 +1,15 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
 var bodyParser = require('body-parser');
+var createError = require('http-errors');
+var cookieParser = require('cookie-parser');
+var express = require('express');
+var logger = require('morgan');
 var mysql = require('mysql');
+var path = require('path');
 
-var indexRouter = require('./routes/index');
-var dbentriesRouter = require('./routes/dbentries'); 
-var showdbRouter = require('./routes/showdbentries')
+var PasteRouter = require('./routes/Paste');
+var PublicPastesRouter = require('./routes/Public_Pastes');
+var PasteEntriesRouter = require('./routes/Paste_Entries');
+var homeRouter = require('./routes/Home');
 const { Console } = require('console');
 
 var app = express();
@@ -24,9 +25,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended : true}));
 
-app.use('/', indexRouter);
-app.use('/entries', dbentriesRouter);
-app.use('/showdbentries', showdbRouter);
+app.use('/Paste_Entries', PasteRouter);
+app.use('/Paste',PasteEntriesRouter);
+app.use('/Public_Pastes', PublicPastesRouter);
+app.use('/', homeRouter);
 
 
 

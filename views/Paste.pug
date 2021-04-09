@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Pastebin 
+  div(class="topnav")
+    a(href='http://localhost:3000') Home
+    a(class="active", href='http://localhost:3000/Paste_Entries') Paste         
+    a(href='http://localhost:3000/Public_Pastes') Public Pastes 
+  hr
+  form#useform(action="http://localhost:3000/Paste" method="POST")
+    input(type="submit" value="Save text")
+    br
+  input#nameinput(input='text', form="useform", name="myname", placeholder="Enter your name")
+  hr
+  textarea#inputarea(rows = '20', cols ='100',name = "mytext" form = "useform", placeholder="Enter text here")
+  
+
+  

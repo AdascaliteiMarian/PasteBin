@@ -1,0 +1,16 @@
+extends layout 
+
+block content
+    h1 Pastes
+    div(class="topnav")
+        a(href='http://localhost:3000') Home
+        a(href='http://localhost:3000/Paste_Entries') Paste         
+        a(class="active", href='http://localhost:3000/Public_Pastes') Public Pastes 
+    hr
+    br
+    ul  
+        each val in results 
+            h4= val.name  
+            li= val.text_entries
+            hr
+             
