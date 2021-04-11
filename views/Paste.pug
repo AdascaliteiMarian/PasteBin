@@ -3,11 +3,11 @@ extends layout
 block content
   h1 Pastebin 
   div(class="topnav")
-    a(href='http://localhost:3000') Home
-    a(class="active", href='http://localhost:3000/Paste_Entries') Paste         
-    a(href='http://localhost:3000/Public_Pastes') Public Pastes 
+    a(href='/') Home
+    a(class="active", href='/Paste') Paste         
+    a(href='/Paste/list') Public Pastes 
   hr
-  form#useform(action="http://localhost:3000/Paste" method="POST")
+  form#useform(action="/Paste" method="post")
     input(type="submit" value="Save text")
     br
   input#nameinput(input='text', form="useform", name="myname", placeholder="Enter your name")

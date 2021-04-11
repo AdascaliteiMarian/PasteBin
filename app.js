@@ -7,8 +7,6 @@ var mysql = require('mysql');
 var path = require('path');
 
 var PasteRouter = require('./routes/Paste');
-var PublicPastesRouter = require('./routes/Public_Pastes');
-var PasteEntriesRouter = require('./routes/Paste_Entries');
 var homeRouter = require('./routes/Home');
 const { Console } = require('console');
 
@@ -25,9 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended : true}));
 
-app.use('/Paste_Entries', PasteRouter);
-app.use('/Paste',PasteEntriesRouter);
-app.use('/Public_Pastes', PublicPastesRouter);
+app.use('/Paste',PasteRouter);
 app.use('/', homeRouter);
 
 
